@@ -6,9 +6,6 @@ Turma: 05
 Conclusão: 
 12/12/2021
 
-Equipe:
-Abdallah Yaziji
-Leandro Vieira
-Roberto Castro
+Equipe: Abdallah Yaziji | Leandro Vieira | Roberto Castro
 
 
