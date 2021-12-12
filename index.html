@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Checkpoint III</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container header-container">
+        <div class="row header-area">
+          <div class="col-4 logo">
+            <a href="index.html"
+              ><img src="./img/logo-new.png" alt="Logomarca Abdu's Bakery"
+            /></a>
+          </div>
+          <div id="menu-superior" class="col-8">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#titulo-pagina">Itens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLongoExemplo">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="menu-inferior">
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">              
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#titulo-pagina">Itens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#ModalLongoExemplo">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="parallaxBar"
+      class="cta-area"
+      data-speed="6"
+      data-type="background"
+    >
+      <div class="container-fluid">
+        <div class="container cta-itens-area">
+          <h1>Abdu's Fix</h1>
+          <h2>Confira a melhor seleção de bolos, tortas e outras delícias</h2>
+          <a href="#titulo-pagina" class="btn-cta">
+            <button type="button" class="btn-outline-primary">Explorar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 id="titulo-pagina" class="titulo">Itens</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card1.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Chocolate</h5>
+              <p class="card-text">
+                O bolo de chocolate é uma receita simples de fazer, leva poucos
+                ingredientes.
+              </p>
+              <a href="./bolochocolate.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card2.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Cenoura</h5>
+              <p class="card-text">
+                O bolo de cenoura é nutritivo, fica fofinho e cai muito bem com
+                aquele café no fim da tarde.
+              </p>
+              <a href="bolodecenoura.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card3.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo Red Velvet</h5>
+              <p class="card-text">
+                Quer fazer uma receita para impressionar? Bolo Red Velvet é a
+                pedida.
+              </p>
+              <a href="BoloRedVelvete.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row second-row">
+        <div class="card-deck">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card4.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Brigadeiro</h5>
+              <p class="card-text">
+                Molhadinho, fofinho e bem fácil de fazer. Essa receita de bolo
+                de brigadeiro agrada a todos!
+              </p>
+              <a href="bolobrigadeiro.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card5.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Morango</h5>
+              <p class="card-text">
+                Já experimentou essa deliciosa receita de Bolo de Morango? Essa
+                receita é rápida e fácil.
+              </p>
+              <a href="bolomorango.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./img/cake_card6.jpg"
+              alt="Imagem de capa do card"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolo de Chocolate Branco</h5>
+              <p class="card-text">
+                O bolo é macio e um sabor amanteigado de chocolate branco e vai
+                se tornar seu novo favorito!
+              </p>
+              <a href="bolobranco.html" target="_blank">
+                <button type="button" class="btn btn-primary">Abrir</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========= FOOTER ========= --> 
+    <footer class="row footer">
+      <div class="container">
+        <div class="col-12">
+          <div class="row footer-area">
+            <div class="col-4 footer-item-left footer-item">
+              <h4>Abdallah Yaziji</h4>
+              <p>Responsável pelo desenvolvimento da página dos itens, e estilização da mesma</p>
+              <div class="social-medias">
+                <a
+                  href="https://www.linkedin.com/in/abdallah-yaziji-7487b1214/"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin.png" alt="Ícone Linkedin" />
+                </a>
+                <a href="https://github.com/abdu02" target="_blank">
+                  <img src="./img/github.png" alt="Ícone GitHub" />
+                </a>
+              </div>
+            </div>
+            <div class="col-4 footer-item">
+              <h4>Leandro Vieira</h4>
+              <p>Responsável pelo desenvolvimento da página dos itens, e estilização da mesma</p>
+              <div class="social-medias">
+                <a
+                  href="https://www.linkedin.com/in/leandro-coelho-vieira-5ba806123/"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin.png" alt="Ícone Linkedin" />
+                </a>
+                <a href="https://github.com/Lecovin" target="_blank">
+                  <img src="./img/github.png" alt="Ícone GitHub" />
+                </a>
+              </div>
+            </div>
+            <div class="col-4 footer-item-right footer-item">
+              <h4>Roberto Castro</h4>
+              <p>Responsável pelo desenvolvimento da estrutura da home, e estilização da mesma</p>
+              <div class="social-medias">
+                <a
+                  href="https://www.linkedin.com/in/robertocastro76/"
+                  target="_blank"
+                >
+                  <img src="./img/linkedin.png" alt="Ícone Linkedin" />
+                </a>
+                <a href="https://github.com/betokast" target="_blank">
+                  <img src="./img/github.png" alt="Ícone GitHub" />
+                </a>
+              </div>
+            </div>
+            <h6 class="footer-item-last">Checkpoint 3 desenvolvido em 2021</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ========= MODAL ========= -->  
+    <div
+      class="modal fade"
+      id="ModalLongoExemplo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="TituloModalLongoExemplo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="TituloModalLongoExemplo">
+              <img src="./img/Logo_AbdusBK.png" alt="Logomarca" />
+            </div>
+            <button 
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="modal-form">
+              <div class="modal-itens">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+              </div>
+              <div class="modal-itens">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha">
+              </div>
+              <div class="modal-btn">
+                <button class="btn btn-primary" type="submit">Entrar</button>
+                <button class="btn btn-primary"  type="reset">Limpar</button>
+              </div>
+            </form>
+          </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $("#meuModal").on("shown.bs.modal", function () {
+        $("#meuInput").trigger("focus");
+      });
+    </script>
+    <!-- ========= MODAL ========= -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

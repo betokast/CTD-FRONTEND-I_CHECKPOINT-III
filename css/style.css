@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600&display=swap");
+
+:root {
+  --primary-color-plus-1: #51592f;
+  --primary-color-zero: #faebd7;
+  --primary-color-minus-1: #cadf76;
+  --black: #000;
+  --white: #fff;
+  --secondary-plus-1: #56594a;
+  --secondary-minus-1: #d1d8b4;
+  --grey: #6b7580;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color-zero);
+  font-family: "Readex Pro", sans-serif;
+}
+
+header {
+  z-index: 999;
+  height: 20vh;
+  width: 100vw;
+  background-color: var(--black);
+
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav li a {
+  color: var(--primary-color-zero);
+  font-size: 1.2rem;
+}
+
+.nav li a:hover{
+  color: var(--black);
+  background-color: var(--primary-color-minus-1);
+  border-radius: 5px;
+}
+
+#parallaxBar {
+  height: 100vh;
+  width: 100vw;
+  background: url("../img/cake_banner.jpg") 50% -150px fixed;
+  position: relative;
+}
+
+.cta-area {
+  color: var(--white);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.cta-itens-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-itens-area h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.cta-itens-area button {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  width: 30%;
+  height: 60px;
+  color: #faebd7;
+  border: 3px solid var(--primary-color-zero);
+  border-radius: 10px;
+}
+
+.cta-itens-area a {
+  text-decoration: none;
+}
+
+.btn-cta {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.btn-cta .btn-outline-primary {
+  margin: 60px auto 0;
+  cursor: pointer;
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.btn-outline-primary:hover {  
+  background-color: var(--primary-color-zero);
+  border: none;
+  color: var(--primary-color-plus-1);
+}
+
+
+
+/* ========= CARDS ========= */
+
+.card-body {
+  top: -20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;  
+}
+
+.card{
+  background-color: var(--primary-color-zero);
+  border: none; 
+}
+
+.card-body{
+  background-color: var(--white);
+  display: flex;
+}
+
+.card-body a{
+  text-align: center;  
+}
+
+.card img{
+  border-radius: 20px 20px 0 0;    
+}
+
+.btn {
+  background-color: var(--primary-color-plus-1);
+  border: none;
+}
+
+.btn-primary {
+  width: 40%;
+  align-self: center;
+}
+.btn-primary:hover {
+  background-color: var(--secondary-minus-1);
+  color: var(--primary-color-plus-1);
+}
+
+.second-row {
+  margin-top: 10px;
+}
+
+
+/* ========= FOOTER ========= */
+
+.footer {
+  margin-top: 40px;
+  height: 360px;
+  background-color: #000;
+  color: #faebd7;
+}
+
+.footer-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer-item > p{
+  color: var(--white);
+  margin: 10px 0 20px;
+}
+
+.footer-item-left {
+  text-align: left;
+}
+.footer-item-right {
+  text-align: right;
+}
+
+.footer-item-last {
+  margin-top: 60px;
+  color: var(--grey);
+}
+
+.social-medias a img {
+  width: 30px;
+}
+.social-medias a:nth-child(2) {
+  margin-left: 5px;
+}
+
+/* ======== MODAL ======== */
+.modal-dialog {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  align-items: center;
+  width: 380px;
+  height: 480px;
+  border-radius: 15px;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-title img {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.modal-form,
+.modal-itens {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.modal-itens input {
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid var(--primary-color-plus-1);
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+
+/* =============== MEDIA QUERY =============== */
+
+#menu-inferior{
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  #menu-inferior {
+    width: 100vw;
+      max-height: 2000px;
+      opacity: 1;
+      transition: all 0.5s ease-in-out 0s;
+  }
+  .bg-dark{
+    background-color: #000 !important;  
+  }
+
+  #menu-inferior{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu-superior{
+    opacity: 0;
+  }
+
+  .cta-itens-area button {
+    font-size: 1.4rem;
+    width: 60%;  
+  }
+
+}

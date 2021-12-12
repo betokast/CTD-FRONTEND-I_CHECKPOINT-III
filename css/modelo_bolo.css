@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li{
+  list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+} 
+
+body {
+  background-color: #faebd7;
+  font-family: "Readex Pro", sans-serif;
+}
+
+.image-bg-area img{
+  width: 100vw;
+}
+
+.cake-area{
+  display: flex;
+  flex-direction: column; 
+}
+
+.cake-area h1{  
+  text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+.cake-ingredients-area{
+  display: flex;
+  
+  align-items: flex-start;
+}
+
+.cake-ingredients-area h2{
+  margin: 40px 0;
+}
+
+.video-area{  
+  width: 100%;  
+}
+
+.video-area h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.video-area-itens{
+  display: flex;
+  flex-direction: column;  
+
+  align-items: center;
+}
+
+.video-area-itens iframe{
+  width: 80vw;
+  height: 50vh;  
+  position: relative;
+  
+}
